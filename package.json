@@ -1,0 +1,24 @@
+{
+  "name": "Practical3-CLIQuizappinNodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhautiksavaj/Practical_3-CLI_Quiz_app_in_Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhautiksavaj/Practical_3-CLI_Quiz_app_in_Node.js/issues"
+  },
+  "homepage": "https://github.com/bhautiksavaj/Practical_3-CLI_Quiz_app_in_Node.js#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "readline-sync": "^1.4.10"
+  }
+}
