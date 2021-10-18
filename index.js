@@ -59,23 +59,6 @@ var mcqList = [
 ];
 
 let score = 0;
-function quiz(question, answer) {
-  let userAnswer = readlineSync.question(question);
-
-  if (userAnswer.toLowerCase() == answer.toLowerCase()) {
-    console.log("You are Right.");
-    score = score + 5;
-  } else {
-    console.log("You are Wrong.");
-    console.log("The Correct Answer is:", answer);
-    score = score - 2;
-  }
-
-  if (score < 0) {
-    score = 0;
-  }
-  console.log(chalk.cyan("Score is: ", score));
-}
 
 function quizMcq(listOfAnswers, question, answer) {
   console.log(question);
@@ -83,11 +66,11 @@ function quizMcq(listOfAnswers, question, answer) {
   console.log("\n");
   if (listOfAnswers[userAnswer] === answer) {
     console.log("You are Right.");
-    score = score + 2;
+    score = score + 5;
   } else {
     console.log("You are Wrong.");
     console.log("The Correct Answer is: ", answer);
-    score = score - 1;
+    score = score - 2;
   }
 
   if (score < 0) {
